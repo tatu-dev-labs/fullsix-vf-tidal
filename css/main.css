@@ -290,6 +290,19 @@ Elementos
 .el-card-image {
 	width: 100%;
 }
+
+.el-featured-checklist-title {
+	font-family: 'VodafoneLt-Regular';
+	font-size: 2.25rem;
+	margin-top: 0;
+	margin-bottom: 2.5rem;
+	text-align: center;
+}
+
+.el-featured-checklist-list-item {
+	margin-bottom: 8px;
+	line-height: 18px;
+}
 /* 
 Componentes 
 */
@@ -306,6 +319,12 @@ Componentes
 .co-card {
 	border: 1px solid #999;
 	text-align: center;
+}
+
+.co-featured-checklist-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
 /* 
@@ -446,6 +465,27 @@ Bloques
 	.bl-featured-carousel .splide__pagination__page.is-active {
 		background: #000;
 		border: 2px solid #fff;
+	}
+
+.bl-featured-checklist {
+	background: #333;
+	color: #fff;
+	padding: 40px 0;
+}
+
+	@media (min-width: 1200px) {
+		.bl-featured-checklist {
+			padding: 0 0 40px 0;
+		}
+	}
+
+	.bl-featured-checklist .inner {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.bl-featured-checklist .inner div {
+		width: 50%;
 	}
 	
 
