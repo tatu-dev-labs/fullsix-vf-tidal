@@ -86,12 +86,13 @@ textarea {
 /* ==========================================================================
 Author's custom styles (Atomic Design)
 ========================================================================== */
-/* Generales */
+/* 
+Generales 
+*/
 @font-face {
 	font-family: 'VodafoneRg-Regular';
 	src: url('../assets/fonts/VodafoneRg.eot'); /* IE9 Compat Modes */
 	src: url('../assets/fonts/VodafoneRg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('../assets/fonts/VodafoneRg.woff2') format('woff2'), /* Super Modern Browsers */
 	url('../assets/fonts/VodafoneRg.woff') format('woff'), /* Pretty Modern Browsers */
 	url('../assets/fonts/VodafoneRg.ttf')  format('truetype'), /* Safari, Android, iOS */
 	url('../assets/fonts/VodafoneRg.svg#svgFontName') format('svg'); /* Legacy iOS */
@@ -101,7 +102,6 @@ Author's custom styles (Atomic Design)
 	font-family: 'VodafoneLt-Regular';
 	src: url('../assets/fonts/VodafoneLt-Regular.eot'); /* IE9 Compat Modes */
 	src: url('../assets/fonts/VodafoneLt-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('../assets/fonts/VodafoneLt-Regular.woff2') format('woff2'), /* Super Modern Browsers */
 	url('../assets/fonts/VodafoneLt-Regular.woff') format('woff'), /* Pretty Modern Browsers */
 	url('../assets/fonts/VodafoneLt-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 	url('../assets/fonts/VodafoneLt-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
@@ -111,11 +111,12 @@ Author's custom styles (Atomic Design)
 	font-family: 'VodafoneRg-Bold';
 	src: url('../assets/fonts/vodafonergbd-webfont.eot'); /* IE9 Compat Modes */
 	src: url('../assets/fonts/vodafonergbd-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('../assets/fonts/vodafonergbd-webfont.woff2') format('woff2'), /* Super Modern Browsers */
 	url('../assets/fonts/vodafonergbd-webfont.woff') format('woff'), /* Pretty Modern Browsers */
 	url('../assets/fonts/vodafonergbd-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
 	url('../assets/fonts/vodafonergbd-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
+
+body, html { font-family: 'VodafoneRg-Regular';}
 
 .container { max-width: 320px; margin: 0 auto; }
 @media (min-width: 768px) {
@@ -126,7 +127,9 @@ Author's custom styles (Atomic Design)
 	.container { max-width: 1200px; }
 }
 
-/* Elementos */
+/* 
+Elementos 
+*/
 .el-hero-logo {
 	width: 98px;
 	height: auto;
@@ -145,7 +148,6 @@ Author's custom styles (Atomic Design)
 	}
 
 .el-hero-title {
-	font-family: 'VodafoneRg-Regular';
 	font-size: 1.875rem;
 	line-height: 2rem;
 	margin-top: 1.875rem;
@@ -166,7 +168,6 @@ Author's custom styles (Atomic Design)
 	}
 
 .el-hero-subtitle {
-	font-family: 'VodafoneRg-Regular';
 	font-size: 1.875rem;
 	font-size: 1.25rem;
 	margin-top: 0.9375rem;
@@ -206,7 +207,6 @@ Author's custom styles (Atomic Design)
 	}
 
 .el-hero-button {
-	font-family: 'VodafoneRg-Regular';
 	font-size: 1.125rem;
 	background: #e60000;
 	border: 1px solid #e60000;
@@ -235,13 +235,60 @@ Author's custom styles (Atomic Design)
 		}
 	}
 
-/* Componentes */
+.el-breadcrumbs-item {
+	float: left;
+	margin-left: 5px;
+	color: #fff;
+}
 
-/* Bloques */
+	.el-breadcrumbs-item:first-child {
+		margin-left: 0;
+	}
+
+	.el-breadcrumbs-item a {
+		color: #fff;
+	}
+
+	.el-breadcrumbs-item:after {
+		content: "";
+		display: inline-block;
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		width: 11px; 
+		height: 11px;
+		transform: rotate(-45deg);
+		margin: 0 0.625rem;
+	}
+
+	.el-breadcrumbs-item:last-child:after {
+		content: "";
+		border: none;
+		width: 0;
+		height: 0;
+		display: none;
+	}
+
+/* 
+Componentes 
+*/
+.co-breadcrumbs ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* 
+Bloques 
+*/
 .bl-hero {
 	background-image: url('../assets/images/hero-bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center center;
 	height: 397px;
 	color: #fff;
 	text-align: center;
@@ -277,6 +324,20 @@ Author's custom styles (Atomic Design)
 		}
 	}
 
+.bl-breadcrumbs {
+	display: none;
+}
+
+	@media (min-width: 1200px) {
+		.bl-breadcrumbs {
+			background: #666;
+			padding: 0.625rem 0;
+			height: 60px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
 
 /* ==========================================================================
 Helper classes
