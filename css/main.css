@@ -303,6 +303,19 @@ Elementos
 	margin-bottom: 8px;
 	line-height: 18px;
 }
+
+	.el-featured-checklist-list-item .el-icon-check {
+		float: left;
+	}
+
+.el-icon-check {
+	background-image: url(../assets/images/tick-or-solved.svg);
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
 /* 
 Componentes 
 */
@@ -482,10 +495,11 @@ Bloques
 	.bl-featured-checklist .inner {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.bl-featured-checklist .inner div {
-		width: 50%;
+		width: 45%;
 	}
 	
 
