@@ -268,6 +268,28 @@ Elementos
 		display: none;
 	}
 
+
+.el-featured-carousel-title {
+	font-family: 'VodafoneLt-Regular';
+	font-size: 2.25rem;
+	margin-bottom: 3.4375rem;
+	text-align: center;
+}
+
+.el-card-title {
+	font-family: 'VodafoneRg-Bold';
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
+	margin-bottom: 1.25rem;
+}
+
+.el-card-text {
+	font-family: 'VodafoneRg-Regular';
+}
+
+.el-card-image {
+	width: 100%;
+}
 /* 
 Componentes 
 */
@@ -279,6 +301,11 @@ Componentes
 	display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.co-card {
+	border: 1px solid #999;
+	text-align: center;
 }
 
 /* 
@@ -338,6 +365,89 @@ Bloques
 			justify-content: center;
 		}
 	}
+
+.bl-featured-carousel {
+	background: #333;
+	color: #fff;
+	padding: 2.1875rem 10px;
+
+}
+
+	@media (min-width: 768px) {
+		.bl-featured-carousel {
+			padding: 2.1875rem 0;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.bl-featured-carousel {
+			padding: 2.1875rem 0;
+		}
+	}
+
+	.bl-featured-carousel .co-card {
+		height: 292px;
+		margin: 0;
+	}
+
+		@media (min-width: 768px) {
+			.bl-featured-carousel .co-card {
+				margin: 0 10px;
+			}
+		}
+
+	.bl-featured-carousel .co-card .inner {
+		padding: 0.9375rem;
+	}
+
+	.bl-featured-carousel .co-card a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.bl-featured-carousel .co-card a:hover {
+		color: #e60000;
+	}
+
+	.bl-featured-carousel .splide {
+		padding-bottom: 2.8125rem;
+	}
+
+	.bl-featured-carousel .splide__slide {
+		margin: 0;
+	}
+
+		
+
+	.bl-featured-carousel .splide__pagination {
+		bottom: 0;
+		display: flex;
+	}
+
+		@media (min-width: 1200px) {
+			.bl-featured-carousel .splide__pagination {
+				display: none;
+			}
+		}
+	
+	.bl-featured-carousel .splide__pagination li {
+		margin: 0 0 0 10px;
+	}
+
+	.bl-featured-carousel .splide__pagination li:first-child {
+		margin: 0;
+	}
+
+	.bl-featured-carousel .splide__pagination__page {
+		background: #afafaf;
+		opacity: 1;
+	}
+
+	.bl-featured-carousel .splide__pagination__page.is-active {
+		background: #000;
+		border: 2px solid #fff;
+	}
+	
 
 /* ==========================================================================
 Helper classes
