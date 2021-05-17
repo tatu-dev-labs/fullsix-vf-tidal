@@ -148,6 +148,7 @@ Elementos
 	}
 
 .el-hero-title {
+    font-family: 'VodafoneLt-Regular';
 	font-size: 1.875rem;
 	line-height: 2rem;
 	margin-top: 1.875rem;
@@ -163,6 +164,7 @@ Elementos
 
 	@media (min-width: 1200px) {
 		.el-hero-title {
+            font-family: 'VodafoneRg-Regular';
 			font-size: 2.75rem;
 		}
 	}
