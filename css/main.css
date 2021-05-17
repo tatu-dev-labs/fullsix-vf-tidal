@@ -268,6 +268,73 @@ Elementos
 		display: none;
 	}
 
+
+.el-featured-carousel-title {
+	font-family: 'VodafoneLt-Regular';
+	font-size: 2.25rem;
+	margin-bottom: 3.4375rem;
+	text-align: center;
+}
+
+.el-card-title {
+	font-family: 'VodafoneRg-Bold';
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
+	margin-bottom: 1.25rem;
+}
+
+.el-card-text {
+	font-family: 'VodafoneRg-Regular';
+}
+
+.el-card-image {
+	width: 100%;
+}
+
+.el-featured-checklist-title {
+	font-family: 'VodafoneLt-Regular';
+    font-size: 1.625rem;
+	margin-top: 0;
+	margin-bottom: 2.5rem;
+	text-align: center;
+}
+
+    @media (min-width: 1200px) {
+        .el-featured-checklist-title {
+            font-size: 1.875rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .el-featured-checklist-title {
+            font-size: 2.25rem;
+        }
+    }
+
+.el-featured-checklist-list-item {
+	margin-bottom: 8px;
+	line-height: 18px;
+    position: relative;
+    padding-left: 45px;
+}
+
+	.el-featured-checklist-list-item .el-icon-check {
+		float: left;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+	}
+
+.el-icon-check {
+	background-image: url(../assets/images/tick-or-solved.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
 /* 
 Componentes 
 */
@@ -279,6 +346,17 @@ Componentes
 	display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.co-card {
+	border: 1px solid #999;
+	text-align: center;
+}
+
+.co-featured-checklist-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
 }
 
 /* 
@@ -338,6 +416,124 @@ Bloques
 			justify-content: center;
 		}
 	}
+
+.bl-featured-carousel {
+	background: #333;
+	color: #fff;
+	padding: 2.1875rem 10px;
+
+}
+
+	@media (min-width: 768px) {
+		.bl-featured-carousel {
+			padding: 2.1875rem 0;
+		}
+	}
+
+	@media (min-width: 768px) {
+		.bl-featured-carousel {
+			padding: 2.1875rem 0;
+		}
+	}
+
+	.bl-featured-carousel .co-card {
+		height: 292px;
+		margin: 0;
+	}
+
+		@media (min-width: 768px) {
+			.bl-featured-carousel .co-card {
+				margin: 0 10px;
+			}
+		}
+
+	.bl-featured-carousel .co-card .inner {
+		padding: 0.9375rem;
+	}
+
+	.bl-featured-carousel .co-card a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.bl-featured-carousel .co-card a:hover {
+		color: #e60000;
+	}
+
+	.bl-featured-carousel .splide {
+		padding-bottom: 2.8125rem;
+	}
+
+	.bl-featured-carousel .splide__slide {
+		margin: 0;
+	}
+
+		
+
+	.bl-featured-carousel .splide__pagination {
+		bottom: 0;
+		display: flex;
+	}
+
+		@media (min-width: 1200px) {
+			.bl-featured-carousel .splide__pagination {
+				display: none;
+			}
+		}
+	
+	.bl-featured-carousel .splide__pagination li {
+		margin: 0 0 0 10px;
+	}
+
+	.bl-featured-carousel .splide__pagination li:first-child {
+		margin: 0;
+	}
+
+	.bl-featured-carousel .splide__pagination__page {
+		background: #afafaf;
+		opacity: 1;
+	}
+
+	.bl-featured-carousel .splide__pagination__page.is-active {
+		background: #000;
+		border: 2px solid #fff;
+	}
+
+.bl-featured-checklist {
+	background: #333;
+	color: #fff;
+	padding: 40px 0;
+}
+
+	@media (min-width: 1200px) {
+		.bl-featured-checklist {
+			padding: 0 0 40px 0;
+		}
+	}
+
+	.bl-featured-checklist .inner {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+        @media (min-width: 768px) {
+            .bl-featured-checklist .inner {
+                flex-direction: row;
+            }
+        }
+
+
+	.bl-featured-checklist .inner div {
+		width: 100%;
+	}
+
+        @media (min-width: 768px) {
+            .bl-featured-checklist .inner div {
+                width: 45%;
+            }
+        }
+        
 
 /* ==========================================================================
 Helper classes
