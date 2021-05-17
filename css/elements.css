@@ -1,0 +1,206 @@
+.el-hero-logo {
+	width: 98px;
+	height: auto;
+}
+
+	@media (min-width: 768px) {
+		.el-hero-logo {
+			width: 114px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.el-hero-logo {
+			width: auto;
+		}
+	}
+
+.el-hero-title {
+    font-family: 'VodafoneLt-Regular';
+	font-size: 1.875rem;
+	line-height: 2rem;
+	margin-top: 1.875rem;
+	margin-bottom: 0;
+}
+
+	@media (min-width: 768px) {
+		.el-hero-title {
+			font-size: 2.25rem;
+			line-height: normal;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.el-hero-title {
+            font-family: 'VodafoneRg-Regular';
+			font-size: 2.75rem;
+		}
+	}
+
+.el-hero-subtitle {
+	font-size: 1.875rem;
+	font-size: 1.25rem;
+	margin-top: 0.9375rem;
+	margin-bottom: 0;
+}
+
+	@media (min-width: 768px) {
+		.el-hero-subtitle {
+			font-family: 'VodafoneLt-Regular';
+			font-size: 1.625rem;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.el-hero-subtitle {
+			font-size: 1.875rem;
+		}
+	}
+
+.el-hero-featured-text {
+	font-family: 'VodafoneRg-Bold';
+	font-size: 1.25rem;
+	margin-top: 0.9375rem;
+	margin-bottom: 0;
+}
+
+	@media (min-width: 768px) {
+		.el-hero-featured-text {
+			font-size: 1.625rem;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.el-hero-featured-text {
+			font-size: 1.875rem;
+		}
+	}
+
+.el-hero-button {
+	font-size: 1.125rem;
+	background: #e60000;
+	border: 1px solid #e60000;
+    color: #fff;
+    width: 100%;
+	height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+	margin-top: 1.875rem;
+}
+
+.el-hero-button:hover, .el-hero-button:focus {
+	background: #970000;
+}
+
+	a.el-hero-button {
+		text-decoration: none;
+	}
+
+	@media (min-width: 768px) {
+		.el-hero-button {
+			width: 89px;
+			height: 45px;
+		}
+	}
+
+.el-breadcrumbs-item {
+	float: left;
+	margin-left: 5px;
+	color: #fff;
+}
+
+	.el-breadcrumbs-item:first-child {
+		margin-left: 0;
+	}
+
+	.el-breadcrumbs-item a {
+		color: #fff;
+	}
+
+	.el-breadcrumbs-item:after {
+		content: "";
+		display: inline-block;
+		border-right: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		width: 11px; 
+		height: 11px;
+		transform: rotate(-45deg);
+		margin: 0 0.625rem;
+	}
+
+	.el-breadcrumbs-item:last-child:after {
+		content: "";
+		border: none;
+		width: 0;
+		height: 0;
+		display: none;
+	}
+
+
+.el-featured-carousel-title {
+	font-family: 'VodafoneLt-Regular';
+	font-size: 2.25rem;
+	margin-bottom: 3.4375rem;
+	text-align: center;
+}
+
+.el-card-title {
+	font-family: 'VodafoneRg-Bold';
+	font-size: 1.25rem;
+	margin-top: 0.625rem;
+	margin-bottom: 1.25rem;
+}
+
+.el-card-text {
+	font-family: 'VodafoneRg-Regular';
+}
+
+.el-card-image {
+	width: 100%;
+}
+
+.el-featured-checklist-title {
+	font-family: 'VodafoneLt-Regular';
+    font-size: 1.625rem;
+	margin-top: 0;
+	margin-bottom: 2.5rem;
+	text-align: center;
+}
+
+    @media (min-width: 1200px) {
+        .el-featured-checklist-title {
+            font-size: 1.875rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .el-featured-checklist-title {
+            font-size: 2.25rem;
+        }
+    }
+
+.el-featured-checklist-list-item {
+	margin-bottom: 8px;
+	line-height: 18px;
+    position: relative;
+    padding-left: 45px;
+}
+
+	.el-featured-checklist-list-item .el-icon-check {
+		float: left;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+	}
+
+.el-icon-check {
+	background-image: url(../assets/images/tick-or-solved.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
