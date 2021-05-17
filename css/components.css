@@ -1,0 +1,20 @@
+.co-breadcrumbs ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.co-card {
+	border: 1px solid #999;
+	text-align: center;
+}
+
+.co-featured-checklist-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
