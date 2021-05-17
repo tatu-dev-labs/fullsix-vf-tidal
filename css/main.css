@@ -293,23 +293,42 @@ Elementos
 
 .el-featured-checklist-title {
 	font-family: 'VodafoneLt-Regular';
-	font-size: 2.25rem;
+    font-size: 1.625rem;
 	margin-top: 0;
 	margin-bottom: 2.5rem;
 	text-align: center;
 }
 
+    @media (min-width: 1200px) {
+        .el-featured-checklist-title {
+            font-size: 1.875rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .el-featured-checklist-title {
+            font-size: 2.25rem;
+        }
+    }
+
 .el-featured-checklist-list-item {
 	margin-bottom: 8px;
 	line-height: 18px;
+    position: relative;
+    padding-left: 45px;
 }
 
 	.el-featured-checklist-list-item .el-icon-check {
 		float: left;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
 	}
 
 .el-icon-check {
 	background-image: url(../assets/images/tick-or-solved.svg);
+    background-repeat: no-repeat;
     width: 24px;
     height: 20px;
     display: inline-block;
@@ -494,14 +513,27 @@ Bloques
 
 	.bl-featured-checklist .inner {
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
 	}
 
+        @media (min-width: 768px) {
+            .bl-featured-checklist .inner {
+                flex-direction: row;
+            }
+        }
+
+
 	.bl-featured-checklist .inner div {
-		width: 45%;
+		width: 100%;
 	}
-	
+
+        @media (min-width: 768px) {
+            .bl-featured-checklist .inner div {
+                width: 45%;
+            }
+        }
+        
 
 /* ==========================================================================
 Helper classes
