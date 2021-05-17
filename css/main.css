@@ -1,3 +1,5 @@
+@import url("fonts.css");
+
 /*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
 
 /* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
@@ -89,32 +91,6 @@ Author's custom styles (Atomic Design)
 /* 
 Generales 
 */
-@font-face {
-	font-family: 'VodafoneRg-Regular';
-	src: url('../assets/fonts/VodafoneRg.eot'); /* IE9 Compat Modes */
-	src: url('../assets/fonts/VodafoneRg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('../assets/fonts/VodafoneRg.woff') format('woff'), /* Pretty Modern Browsers */
-	url('../assets/fonts/VodafoneRg.ttf')  format('truetype'), /* Safari, Android, iOS */
-	url('../assets/fonts/VodafoneRg.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-	font-family: 'VodafoneLt-Regular';
-	src: url('../assets/fonts/VodafoneLt-Regular.eot'); /* IE9 Compat Modes */
-	src: url('../assets/fonts/VodafoneLt-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('../assets/fonts/VodafoneLt-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-	url('../assets/fonts/VodafoneLt-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-	url('../assets/fonts/VodafoneLt-Regular.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-	font-family: 'VodafoneRg-Bold';
-	src: url('../assets/fonts/vodafonergbd-webfont.eot'); /* IE9 Compat Modes */
-	src: url('../assets/fonts/vodafonergbd-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-	url('../assets/fonts/vodafonergbd-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-	url('../assets/fonts/vodafonergbd-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-	url('../assets/fonts/vodafonergbd-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
 
 body, html { font-family: 'VodafoneRg-Regular';}
 
